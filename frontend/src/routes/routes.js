@@ -137,4 +137,21 @@ export const routes = [
     showInNavbar: false,
     icon: null,
   },
+
+  {
+    path: "/dashboard/proposal-form",
+    name: "ProposalForm",
+    layout: "DashboardLayout",
+    showInNavbar: false,
+    icon: null,
+  },
+
+  {
+    path: "/dashboard/proposal-preview",
+    name: "ProposalPreview",
+    layout: "DashboardLayout",
+    showInNavbar: false,
+    icon: null,
+    showInNavbar: false,
+  },
 ];

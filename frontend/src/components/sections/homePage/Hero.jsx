@@ -35,7 +35,7 @@ const Hero = () => {
                             Interior
                         </span>
                         <br />
-                        Renovation & Construction
+                         & Contracting LLC.
                     </h1>
 
                     <p className="mt-6 text-lg leading-relaxed text-gray-200 md:text-xl">

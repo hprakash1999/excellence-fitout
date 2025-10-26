@@ -5,7 +5,9 @@ export const validate = (schema) => (req, res, next) => {
   try {
     // parse & replace req.body with safe data
     console.log("Validating req.body:", req.body);
+    req.body.isPublished = req.body.isPublished === "true";
     req.body = schema.parse(req.body);
+    console.log("Validated req.body");
     next();
   } catch (err) {
     if (err instanceof ZodError) {
@@ -15,3 +17,4 @@ export const validate = (schema) => (req, res, next) => {
     next(err);
   }
 };
+
